@@ -2,7 +2,7 @@ def create_bit_vector(string):
     bit_vector = 0
     for c in string:
         if c.isalnum():
-            diff = ord(c.lower()) - ord('a')
+            diff = ord(c.lower()) - ord(' ')
             mask = 1 << diff
 
             if bit_vector & mask == 0:
