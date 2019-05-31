@@ -11,7 +11,7 @@ def one_edit_replace(s1, s2):
 def one_edit_insert(s1, s2):
     idx1 = 0
     idx2 = 0
-    while idx2 < len(s2) and idx1 < len(s1):
+    while idx1 < len(s1) and idx2 < len(s2):
         if s1[idx1] != s2[idx2]:
             if idx1 != idx2:
                 return False
